@@ -1,0 +1,64 @@
+/* Pop Up */
+.modal {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f3;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+textarea {
+    resize: none;
+}
+
+/* Background */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: fadeEffect 9s infinite;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0.1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
